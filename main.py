@@ -1,6 +1,6 @@
 import logging
 import pytest
-from DFT_solver import DFTHelium
+from DFT.DFT_solver import DFTHelium
 
 """
     Main script for running self-consistent field (SCF) calculations 
