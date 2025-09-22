@@ -87,12 +87,11 @@ With a dense radial grid of 30,000 points (default setting), the computed total 
 | Hartree–Fock (HF)               | -2.8617              | Missing electron correlation |
 | DFT-LDA (typical)               | -2.83 … -2.90        | Depends on parametrization of exchange–correlation |
 
-## Install dependencies
-
+## Install dependancies
 Clone the repository and install the required package with:
 
 git clone https://github.com/MariaPatane/Helium_DFT.git   
-pip install -r requirements.txt
+pip install -r requirements.txt  
 
 
  ## How to run the code
