@@ -39,7 +39,7 @@ $$
 with $f_i$ the orbital occupations.
 
 
- **Benchmarks and Tests**
+ #Benchmarks and Tests
 
 To verify the physical correctness of the implementation, two benchmark tests were performed 
 with the hydrogen atom (Z = 1):
@@ -78,7 +78,7 @@ $$
 ![Hydrogen Hartree vs Poisson](plots/hydrogen_hartree_energy.png)  
 *Verification of the Hartree potential solver: numerical solution obtained from the radial algorithm is compared against the analytical solution of Poisson’s equation for the hydrogen atom. The two curves overlap almost perfectly, demonstrating the accuracy of the Hartree implementation.*
 
-**Results**  
+#Results  
 With a dense radial grid of 30,000 points (default setting), the computed total energy for Helium atom is -2.9015 a.u. This result is in good agreement with the benchmark values available for the helium atom (Z = 2) listed in the following table:
 
 | Method                         | Total Energy (Hartree) | Notes |
@@ -87,24 +87,16 @@ With a dense radial grid of 30,000 points (default setting), the computed total 
 | Hartree–Fock (HF)               | -2.8617              | Missing electron correlation |
 | DFT-LDA (typical)               | -2.83 … -2.90        | Depends on parametrization of exchange–correlation |
 
-## Installation
+#Install dependencies
 
-Clone the repository and install the dependencies with:
+Clone the repository and install the required package with:
 
 git clone https://github.com/MariaPatane/Helium_DFT.git   
 pip install -r requirements.txt
 
 
- How to run the code
-
-**Install dependencies**  
-Install the required packages:
-
-<p align="center">
-  pip install -r requirements.txt
-</p>
-
-**Run the main script**  
+ #How to run the code
+ 
 Launch the self-consistent DFT simulation for the helium atom (default parameters)  
 <p align="center">
   python main.py
