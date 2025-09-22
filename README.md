@@ -91,12 +91,33 @@ With a dense radial grid of 30,000 points (default setting), the computed total 
 
 Clone the repository and install the dependencies with:
 
-```bash
-git clone https://github.com/username/helium-dft.git
-cd helium-dft
+git clone https://github.com/MariaPatane/Helium_DFT.git   
 pip install -r requirements.txt
-```bash
 
+
+ How to run the code
+
+**Install dependencies**  
+Install the required packages:
+
+<p align="center">
+  pip install -r requirements.txt
+</p>
+
+**Run the main script**  
+Launch the self-consistent DFT simulation for the helium atom (default parameters)  
+<p align="center">
+  python main.py
+</p>
+
+The console will show only the final convergence message.
+A log file Helium_DFT.txt will be created containing the energy values for each iteration.
+Example: DFT loop converged after 16 iterations with final energy  -2.901466 a.u.
+
+To verify correctness of the implementation:  
+<p align="center">
+pytest tests/ 
+ </p>
 
 
 **References**  
